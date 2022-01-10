@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Playbook</title>
-  </head>
-  <body>
 
-    <h1>HTML Playbook</h1>
-    <h2>Documentation</h2>
-    		<h3>Mozilla Development Network</h3>
-    				<p>Developed by Mozilla Firefox company; most popular. <a href= "https://developer.mozilla.org/en-US/">Link</a></p>
-    		<h3>W3 Schools</h3>
-    				<p>Alternative documentation resource. <a href="https://www.w3schools.com/html/default.asp">Link</a></p>
-    		<h3>Devdocs.io</h3>
-    				<p>Useful repository of several kinds of documentations, including HTML, CSS & JS. <a href="devdocs.io">Link</a></p>
-    <br>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Playbook</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-    <h2>Tags</h2>
-    		<b>(covered so far)</b>
-    <!--		<br> <i>Check comments for tags</i>
+<body>
+
+  <h1>HTML Playbook</h1>
+  <h2>Documentation</h2>
+  <h3>Mozilla Development Network</h3>
+  <p>Developed by Mozilla Firefox company; most popular. <a href="https://developer.mozilla.org/en-US/">Link</a></p>
+  <h3>W3 Schools</h3>
+  <p>Alternative documentation resource. <a href="https://www.w3schools.com/html/default.asp">Link</a></p>
+  <h3>Devdocs.io</h3>
+  <p>Useful repository of several kinds of documentations, including HTML, CSS & JS. <a href="devdocs.io">Link</a></p>
+  <br>
+
+  <h2>Tags</h2>
+  <strong>(covered so far)</strong>
+  <!--		<br> <i>Check comments for tags</i>
     		<h3>Heading Elements</h3>
     				<!-- <h1>Heading level 1</h1>
     				<h2>Heading level 2</h2>
@@ -97,258 +100,263 @@
     				<em>preload</em>
     				<em>src</em>
      -->
-    <table border=1 align=center>
-    	<thead>
-    		<tr>
-    			<th>Tag</th>
-    			<th>Description</th>
-    			<th>Example</th>
-    			<th>Attributes</th>
-    		</tr>
-    	</thead>
-    	<tbody align=center>
-    		<tr>
-    			<td>Heading Elements</td>
-    			<td>Numbered from 1 to 6, in decreasing size, aimed to provide title and subtitles in a document. Best practice is to not skip numbers when increasing count of headers; size can be edited through CSS.  			</td>
-    			<td>&lt;h1&gt;Heading level 1&lt;/h1&gt; <br>
-    				&lt;h2&gt;Heading level 2&lt;/h2&gt; <br>
-    				&lt;h3&gt;Heading level 3&lt;/h3&gt; <br>
-    				&lt;h4&gt;Heading level 4&lt;/h4&gt;
-    				&lt;h5&gt;Heading level 5&lt;/h5&gt;
-    				&lt;h6&gt;Heading level 6&lt;/h6&gt;</td>
-    			<td><em>align</em></td>
-    		</tr>
-    		<tr>
-    			<td>Line Break</td>
-    			<td>Self-contained; places a line break anywhere it's placed without breaking other tags that may encompass it.</td>
-    			<td>&lt;br&gt;</td>
-    			<td><em>clear</em></td>
-    		</tr>
-    		<tr>
-    			<td>Horizontal Rule</td>
-    			<td>Self-contained; places a horizontal line. Meant for segregation, is now holds semantic use. For actual horizontal line drawing, CSS is recommended.</td>
-    			<td>&lt;hr&gt;</td>
-    			<td><i>align</em> <br>
-    						<em>color</em> <br>
-    						<em>noshade</em> <br>
-    						<em>size</em> <br>
-    						<em>width</em></td>
-    		</tr>
-    		<tr>
-    			<td>Paragraph</td>
-    			<td>Estructures text in block. Closing can be ommited. Only global attributes.</td>
-    			<td>&lt;p&gt; &lt;/p&gt;</td>
-    			<td></td>
-    		</tr>
-    		<tr>
-    			<td>Lists</td>
-    			<td>Allows to set a group of items in a list, separated by bullet points in unordered lists (ul) or by ascending number/letter in case of ordered lists (ol).</td>
-    			<td>&lt;ol&gt; &lt;/ol&gt; OR &lt;ul&gt; &lt;/ul&gt;<br> &emsp; &lt;il&gt;item1&lt;/il&gt; <br> &emsp;
-    &lt;il&gt;item2&lt;/il&gt;</td>
-    			<td>(OL only)<br>						<em>reversed</em> <br>
-    <em>start</em> <br>
-    <em>type</em></td>
-    		</tr>
-    		<tr>
-    			<td>Image</td>
-    			<td>Imports an image sourced from the Internet or local server.</td>
-    			<td>&lt;img src="" alt=""&gt;</td>
-    			<td><em>alt</em> <br>
-    					<em>crossorigin</em> <br>
-    					<em>anonymous</em> <br>
-    					<em>use-credentials</em> <br>
-    					<em>decoding</em> <br>
-    					<em>height</em> <br>
-    					<em>ismap</em> <br>
-    					<em>loading</em> <br>
-    					<em>referrerpolicy</em> <br>
-    					<em>sizes</em> <br>
-    					<em>src</em> <br>
-    					<em>srcset</em> <br>
-    					<em>width</em> <br>
-    					<em>usemap</em> <br>
-    					<em>title</em></td>
-    		</tr>
-    		<tr>
-    			<td>Anchor</td>
-    			<td>Attributes a hyperlink to an element.</td>
-    			<td>&lt;a&gt; &lt;/a&gt;</td>
-    			<td><em>download</em> <br>
-    					<em>href</em> <br>
-    					<em>ping</em> <br>
-    					<em>rel</em> <br>
-    					<em>target</em></td>
-    		</tr>
-    		<tr>
-    			<td>Audio</td>
-    			<td>Allows the embedding of an audio file.
-    </td>
-    			<td>&lt;audio src=""&gt; &lt;/audio&gt;</td>
-    			<td><em>autoplay</em> <br>
-    				<em>controls</em> <br>
-    				<em>crossorigin</em> <br>
-    				<em>currentTime</em> <br>
-    				<em>duration</em> <br>
-    				<em>loop</em> <br>
-    				<em>muted</em> <br>
-    				<em>preload</em> <br>
-    				<em>src</em></td>
-    		</tr>
-    	</tbody>
-    </table>
-    <br>
-    <h4>Tables</h4>
-    <p>
-    	Allows you to present a data table, not unlike a data sheet. Every piece of data must be input manually.
-    </p>
-    <table border=1>
-    	<tbody align=center>
-    		<tr>
-    			<th>Content</th>
-    			<th>Tag</th>
-    			<th>Optional?</th>
-    		</tr>
-    		<tr>
-    			<td>Caption</td>
-    			<td>&lt;caption&gt; &lt;/caption&gt;</td>
-    			<td><input type="checkbox" checked></td>
-    		</tr>
-    		<tr>
-    			<td>Column Group</td>
-    			<td>&lt;colgroup&gt; &lt;/colgroup&gt; <br>	&lt;col&gt; &lt;/col&gt;</td>
-    			<td><input type="checkbox" checked></td>
-    		</tr>
-    		<tr>
-    			<td>Table Head</td>
-    			<td>&lt;thead&gt; &lt;/thead&gt; <br>	&lt;th&gt; &lt;/th&gt;</td>
-    			<td><input type="checkbox" checked></td>
-    		</tr>
-    		<tr>
-    			<td>Table Body</td>
-    			<td>&lt;tbody&gt; &lt;/tbody&gt;</td>
-    			<td><input type="checkbox" checked></td>
-    		</tr>
-    		<tr>
-    			<td>Table Row</td>
-    			<td>&lt;tr&gt; &lt;/tr&gt;</td>
-    			<td><input type="checkbox"></td>
-    		</tr>
-    		<tr>
-    			<td>Table Data</td>
-    			<td>&lt;td&gt; &lt;/td&gt;</td>
-    			<td><input type="checkbox"></td>
-    		</tr>
-    		<tr>
-    			<td>Table Foot</td>
-    			<td>&lt;tfoot&gt; &lt;/tfoot&gt;</td>
-    			<td><input type="checkbox" checked></td>
-    		</tr>
-    	</tbody>
-    </table>
+  <table border=1 align=center>
+    <thead>
+      <tr>
+        <th>Tag</th>
+        <th>Description</th>
+        <th>Example</th>
+        <th>Attributes</th>
+      </tr>
+    </thead>
+    <tbody align=center>
+      <tr>
+        <td>Heading Elements</td>
+        <td>Numbered from 1 to 6, in decreasing size, aimed to provide title and subtitles in a document. Best practice is to not skip numbers when increasing count of headers; size can be edited through CSS. </td>
+        <td>&lt;h1&gt;Heading level 1&lt;/h1&gt; <br>
+          &lt;h2&gt;Heading level 2&lt;/h2&gt; <br>
+          &lt;h3&gt;Heading level 3&lt;/h3&gt; <br>
+          &lt;h4&gt;Heading level 4&lt;/h4&gt;
+          &lt;h5&gt;Heading level 5&lt;/h5&gt;
+          &lt;h6&gt;Heading level 6&lt;/h6&gt;</td>
+        <td><em>align</em></td>
+      </tr>
+      <tr>
+        <td>Line Break</td>
+        <td>Self-contained; places a line break anywhere it's placed without breaking other tags that may encompass it.</td>
+        <td>&lt;br&gt;</td>
+        <td><em>clear</em></td>
+      </tr>
+      <tr>
+        <td>Horizontal Rule</td>
+        <td>Self-contained; places a horizontal line. Meant for segregation, is now holds semantic use. For actual horizontal line drawing, CSS is recommended.</td>
+        <td>&lt;hr&gt;</td>
+        <td><i>align</em> <br>
+            <em>color</em> <br>
+            <em>noshade</em> <br>
+            <em>size</em> <br>
+            <em>width</em></td>
+      </tr>
+      <tr>
+        <td>Paragraph</td>
+        <td>Estructures text in block. Closing can be ommited. Only global attributes.</td>
+        <td>&lt;p&gt; &lt;/p&gt;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Lists</td>
+        <td>Allows to set a group of items in a list, separated by bullet points in unordered lists (ul) or by ascending number/letter in case of ordered lists (ol).</td>
+        <td>&lt;ol&gt; &lt;/ol&gt; OR &lt;ul&gt; &lt;/ul&gt;<br> &emsp; &lt;il&gt;item1&lt;/il&gt; <br> &emsp;
+          &lt;il&gt;item2&lt;/il&gt;</td>
+        <td>(OL only)<br> <em>reversed</em> <br>
+          <em>start</em> <br>
+          <em>type</em>
+        </td>
+      </tr>
+      <tr>
+        <td>Image</td>
+        <td>Imports an image sourced from the Internet or local server.</td>
+        <td>&lt;img src="" alt=""&gt;</td>
+        <td><em>alt</em> <br>
+          <em>crossorigin</em> <br>
+          <em>anonymous</em> <br>
+          <em>use-credentials</em> <br>
+          <em>decoding</em> <br>
+          <em>height</em> <br>
+          <em>ismap</em> <br>
+          <em>loading</em> <br>
+          <em>referrerpolicy</em> <br>
+          <em>sizes</em> <br>
+          <em>src</em> <br>
+          <em>srcset</em> <br>
+          <em>width</em> <br>
+          <em>usemap</em> <br>
+          <em>title</em>
+        </td>
+      </tr>
+      <tr>
+        <td>Anchor</td>
+        <td>Attributes a hyperlink to an element.</td>
+        <td>&lt;a&gt; &lt;/a&gt;</td>
+        <td><em>download</em> <br>
+          <em>href</em> <br>
+          <em>ping</em> <br>
+          <em>rel</em> <br>
+          <em>target</em>
+        </td>
+      </tr>
+      <tr>
+        <td>Audio</td>
+        <td>Allows the embedding of an audio file.
+        </td>
+        <td>&lt;audio src=""&gt; &lt;/audio&gt;</td>
+        <td><em>autoplay</em> <br>
+          <em>controls</em> <br>
+          <em>crossorigin</em> <br>
+          <em>currentTime</em> <br>
+          <em>duration</em> <br>
+          <em>loop</em> <br>
+          <em>muted</em> <br>
+          <em>preload</em> <br>
+          <em>src</em>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <h4>Tables</h4>
+  <p>
+    Allows you to present a data table, not unlike a data sheet. Every piece of data must be input manually.
+  </p>
+  <table border=1>
+    <tbody align=center>
+      <tr>
+        <th>Content</th>
+        <th>Tag</th>
+        <th>Optional?</th>
+      </tr>
+      <tr>
+        <td>Caption</td>
+        <td>&lt;caption&gt; &lt;/caption&gt;</td>
+        <td><input type="checkbox" checked></td>
+      </tr>
+      <tr>
+        <td>Column Group</td>
+        <td>&lt;colgroup&gt; &lt;/colgroup&gt; <br> &lt;col&gt; &lt;/col&gt;</td>
+        <td><input type="checkbox" checked></td>
+      </tr>
+      <tr>
+        <td>Table Head</td>
+        <td>&lt;thead&gt; &lt;/thead&gt; <br> &lt;th&gt; &lt;/th&gt;</td>
+        <td><input type="checkbox" checked></td>
+      </tr>
+      <tr>
+        <td>Table Body</td>
+        <td>&lt;tbody&gt; &lt;/tbody&gt;</td>
+        <td><input type="checkbox" checked></td>
+      </tr>
+      <tr>
+        <td>Table Row</td>
+        <td>&lt;tr&gt; &lt;/tr&gt;</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>Table Data</td>
+        <td>&lt;td&gt; &lt;/td&gt;</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>Table Foot</td>
+        <td>&lt;tfoot&gt; &lt;/tfoot&gt;</td>
+        <td><input type="checkbox" checked></td>
+      </tr>
+    </tbody>
+  </table>
 
-    <h2>Forms</h2>
-    	<p>
-    		Used to submit information. Inputs can be assigned a label with &lt;label&gt; &lt;/label&gt; with the <em>for</em> attribute. The <em>for</em> attribute and the input's <em>id</em> attribute to be associated with each other.
-    	</p>
-    	<h3>Input Types</h3>
-    	<table border="1" cellspacing=2>
-    		<thead>
-    			<tr>
-    				<th>Type</th>
-    				<th>Example</th>
-    			</tr>
-    		</thead>
-    		<tbody align=center>
-    			<tr>
-    				<td>button</td>
-    				<td><input type="button" value="press me"></td>
-    			</tr>
-    			<tr>
-    				<td>checkbox</td>
-    				<td><input type="checkbox"></td>
-    			</tr>
-    			<tr>
-    				<td>color</td>
-    				<td><input type="color"></td>
-    			</tr>
-    			<tr>
-    				<td>date</td>
-    				<td><input type="date"></td>
-    			</tr>
-    			<tr>
-    				<td>datetime-local</td>
-    				<td><input type="datetime-local"></td>
-    			</tr>
-    			<tr>
-    				<td>email</td>
-    				<td><input type="email"></td>
-    			</tr>
-    			<tr>
-    				<td>file</td>
-    				<td><input type="file"></td>
-    			</tr>
-    			<tr>
-    				<td>hidden</td>
-    				<td><input type="hidden"></td>
-    			</tr>
-    			<tr>
-    				<td>image</td>
-    				<td><input type="image"></td>
-    			</tr>
-    			<tr>
-    				<td>month</td>
-    				<td><input type="month"></td>
-    			</tr>
-    			<tr>
-    				<td>number</td>
-    				<td><input type="number"></td>
-    			</tr>
-    			<tr>
-    				<td>password</td>
-    				<td><input type="password"></td>
-    			</tr>
-    			<tr>
-    				<td>radio</td>
-    				<td><input type="radio"></td>
-    			</tr>
-    			<tr>
-    				<td>range</td>
-    				<td><input type="range"></td>
-    			</tr>
-    			<tr>
-    				<td>reset</td>
-    				<td><input type="reset"></td>
-    			</tr>
-    			<tr>
-    				<td>search</td>
-    				<td><input type="search"></td>
-    			</tr>
-    			<tr>
-    				<td>submit</td>
-    				<td><input type="submit"></td>
-    			</tr>
-    			<tr>
-    				<td>tel</td>
-    				<td><input type="tel"></td>
-    			</tr>
-    			<tr>
-    				<td>text</td>
-    				<td><input type="text"></td>
-    			</tr>
-    			<tr>
-    				<td>time</td>
-    				<td><input type="time"></td>
-    			</tr>
-    			<tr>
-    				<td>url</td>
-    				<td><input type="url"></td>
-    			</tr>
-    			<tr>
-    				<td>week</td>
-    				<td><input type="week"></td>
-    			</tr>
-    		</tbody>
-    	</table>
+  <h2>Forms</h2>
+  <p>
+    Used to submit information. Inputs can be assigned a label with &lt;label&gt; &lt;/label&gt; with the <em>for</em> attribute. The <em>for</em> attribute and the input's <em>id</em> attribute to be associated with each other.
+  </p>
+  <h3>Input Types</h3>
+  <table border="1" cellspacing=2>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody align=center>
+      <tr>
+        <td>button</td>
+        <td><input type="button" value="press me"></td>
+      </tr>
+      <tr>
+        <td>checkbox</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td><input type="color"></td>
+      </tr>
+      <tr>
+        <td>date</td>
+        <td><input type="date"></td>
+      </tr>
+      <tr>
+        <td>datetime-local</td>
+        <td><input type="datetime-local"></td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td><input type="email"></td>
+      </tr>
+      <tr>
+        <td>file</td>
+        <td><input type="file"></td>
+      </tr>
+      <tr>
+        <td>hidden</td>
+        <td><input type="hidden"></td>
+      </tr>
+      <tr>
+        <td>image</td>
+        <td><input type="image"></td>
+      </tr>
+      <tr>
+        <td>month</td>
+        <td><input type="month"></td>
+      </tr>
+      <tr>
+        <td>number</td>
+        <td><input type="number"></td>
+      </tr>
+      <tr>
+        <td>password</td>
+        <td><input type="password"></td>
+      </tr>
+      <tr>
+        <td>radio</td>
+        <td><input type="radio"></td>
+      </tr>
+      <tr>
+        <td>range</td>
+        <td><input type="range"></td>
+      </tr>
+      <tr>
+        <td>reset</td>
+        <td><input type="reset"></td>
+      </tr>
+      <tr>
+        <td>search</td>
+        <td><input type="search"></td>
+      </tr>
+      <tr>
+        <td>submit</td>
+        <td><input type="submit"></td>
+      </tr>
+      <tr>
+        <td>tel</td>
+        <td><input type="tel"></td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>time</td>
+        <td><input type="time"></td>
+      </tr>
+      <tr>
+        <td>url</td>
+        <td><input type="url"></td>
+      </tr>
+      <tr>
+        <td>week</td>
+        <td><input type="week"></td>
+      </tr>
+    </tbody>
+  </table>
 
-  </body>
+</body>
+
 </html>
